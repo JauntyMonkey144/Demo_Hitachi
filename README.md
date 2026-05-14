@@ -3,7 +3,7 @@
 Đây là không gian mở được tạo ra nhằm mục đích chia sẻ, thảo luận và tổng hợp các giải pháp, script, và thủ thuật xử lý lỗi (troubleshooting) thực tế cho hệ thống AVEVA MES.
 
 ## 🎯 Mục tiêu
-- Cung cấp các đoạn mã (SQL Stored Procedures, VBScript, Javascript cho Dashboard) đã được tối ưu và kiểm chứng.
+- Cung cấp các đoạn mã (SQL Stored Procedures, Javascript cho Dashboard) đã được tối ưu và kiểm chứng.
 - Hỗ trợ xử lý các lỗi thường gặp liên quan đến theo dõi mẻ (Lot tracking), OEE, luân chuyển trạng thái thiết bị và cấu hình hệ thống.
 - Xây dựng một thư viện tham khảo nhanh chóng cho các kỹ sư và lập trình viên làm việc với AVEVA MES.
 
