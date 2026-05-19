@@ -1,0 +1,9 @@
+MC_UI_Consume.js: file này fix bug null "From Entity" ở form Consume
+
+OM_Queue_V2_conf.js: file này custom lại KendoGrid để hiện thêm cột "Factory" form Supervisor
+BaseGrid_Traceability_conf.js: file này custom lại BaseGrid để hiện bảng Traceability
+->* OM_Queue_V2_conf, BaseGrid_Traceability_conf là các file custom widget nên phải thêm 
+	và config C:\Program Files\AVEVA\Work Tasks\Web\BPMUITemplates\Default\NextGenForms\custom\Widgets ,
+Sau đó config thêm index.html ở BaseGrid *<-
+
+sp_Traceability_Main_Search.sql: store cần thiết Traceability

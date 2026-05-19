@@ -1,9 +1,0 @@
-MC_UI_Consume.js: file nay fix bug null "From Entity" o form Consume
-
-OM_Queue_V2_conf.js: file nay custom lai KendoGrid de hien them cot Factory form Supervisor
-BaseGrid_Traceability_conf.js: file nay custom lai BaseGrid de hien bang Traceability
-->* OM_Queue_V2_conf, BaseGrid_Traceability_conf la cac file custom nen phai them 
-	va config C:\Program Files\AVEVA\Work Tasks\Web\BPMUITemplates\Default\NextGenForms\custom\Widgets ,
-Sau do config them index.html o BaseGrid *<-
-
-sp_Traceability_Main_Search.sql: store can thiet cho Traceability
