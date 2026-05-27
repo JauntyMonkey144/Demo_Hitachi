@@ -13,7 +13,7 @@ Ver	Release		By							Date						Change Description
 007	01.00.00	Praveen  				2025-03-20			#4524 function ddLocationLoad add the parameter canStore:true
 008	01.01.00	Praveen  				2025-05-14			#4994 function ddLocationLoad() add the parameter object canReceive:true
 009	01.01.00	Fayaz A					2025-05-28			#5008 Localization key update to refer from FT runtime locale file.
-010	02.00.00	Vinh Khanh Tran					2026-05-13			#5008 Fix bug in Location dropdown panel .
+010	02.00.00	Fayaz A					2026-05-13			#5008 Fix bug in Location dropdown panel .
 */
 // ------------------------------------------------------------- Immediate Functions ------------------------------------------------------------ //
 
