@@ -1,0 +1,403 @@
+
+.PanelBtnC_skbtn {
+    margin-top: 15px !important;
+    width: 124px!important;
+	background-color: #f1f1f1!important;
+    border: solid 1px #999!important;
+    color: black!important;
+    font-size: xx-large!important;
+   
+    height: 70px!important;
+    margin-top: 7px !important;
+}
+
+.containercard {
+  padding: 2px 16px;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+.MDCCTile {
+	font-size: 14px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-weight: normal;
+    margin: 0px 14px 14px 0px;
+    background-color: #ffffff;
+    height: 70px;
+    width: 185px;
+    position: relative;
+    display: inline-block !important;
+}
+.MDCCTile span {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    min-width: 100%;
+    padding: 0px 10px 0px 10px;
+    text-align: left;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.TileSingleLevelTitle
+{
+    font-size: 13px!important;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.MDCCTile.cardselected {
+    /* box-shadow: 0 4px 16px 0 rgba(0,0,0,0.6);
+    background-color: #acb2e13b !important;
+    border: 1px solid blue !important; */
+	
+	border-color: #001dff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #acb2e13b !important;
+}
+.tile {
+    width: 185px;
+    /*height: 95px !important;*/
+    
+    margin: 2px;
+    padding: 6px;
+    margin-bottom: 10px;
+    margin-right: 9px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+	/*overflow:hidden;*/
+	overflow:hidden;
+}
+.tileImage
+{ 
+  width: 24px !important;
+  margin-right: 5px;
+}
+.tileImage.station
+{
+	opacity: .8;
+    width: 23%!important;
+    margin-right: 4%;
+}
+.tileContent
+{
+  width: auto !important;
+}
+.tileContent.station
+{
+  width: 73%!important;
+}
+.tile.station img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 5px 10px 6px 2px;
+  opacity: 0.3;
+}
+.tile img {
+  width: 24px;
+  height: auto;
+  border-radius: 5px;
+  margin: 5px 5px 5px 0px;
+  opacity: 0.3;
+}
+
+.tile div
+{
+	float:left;
+	display:block;
+	cursor:pointer;
+	/*padding:4px;*/
+}
+.tile-title {
+    margin: 2px 0px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tile-description {
+  margin-top: 2px;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-bottom: 2px !important;
+}
+.tile-qty {
+  margin-top: 2px;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-bottom: 2px !important;
+  padding-left:10px;
+}
+
+div#scroller {
+    display: flex;
+	   /* flex-wrap: wrap;Add this property to wrap tiles to the next row */
+	  justify-content: flex-start;
+	 /* margin-bottom: 20px;*/
+	  width:100%
+}
+
+
+
+#wrapperX {
+    width: 580px;
+    overflow: hidden;
+    
+}
+
+#scrollerX {
+    width: 600px;
+    height: 600px;
+    overflow: auto;
+   
+}
+
+.tile.cardselected {
+	border-color:#001dff;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #acb2e13b !important;
+}
+.tile.cardselected img {
+	 opacity:0.9;
+}
+.tile:hover {
+  /*filter: brightness(85%);*/
+  background-color:#ededed !important;
+}
+.tile>img:hover  {
+  opacity:0.9;
+}
+.pagination {
+	
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 555px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+.pagination.hide{ display:none }
+
+.card.clickablecard.hidecard{display:none}
+
+a.MDCCButtonSmall.uilab-black-subtitle-2-or-button.hide.type {
+    display: none;
+}
+.hidecard{display:none;}
+
+
+.labelContainer b {
+  height: 30px;
+  width: 100px;
+  color: #000;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  /*position: absolute;*/
+  white-space: nowrap;
+  transform: translateX(0);
+  transition: 1s;
+}
+
+.labelContainer:first-of-type:hover b {
+  width: auto;
+  transform: translateX(calc(200px - 100%));
+}
+
+/*#mymarquee { display: none;}*/
+
+.moving-left{
+ 
+  position: relative;
+  transition: transform 0.5s ease;
+  transform: translateX(0px);
+  display:inline-block;  
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	padding-left:10px;
+}
+.moving-left:hover 
+{
+  transform: translateX(-30%);
+  transition: 1s;
+   width: auto;  
+}
+.cardwidth{width:100%; padding-left:10px;}
+
+.MDCCTile.square {
+	text-align:center !important;
+	height: 102px;
+    width: 109px;
+}
+.MDCCTile.square img {
+	opacity:0.5;
+}
+.MDCCTile span.square {
+    margin: 0;
+	position:unset;
+    top: 50%;
+    min-width: 100%;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	font-family: 'Roboto';
+}
+
+.TileIcon
+{
+	height: 60px;
+    display: block;
+    margin: 2% 12%;
+	/*    margin: 4% 23%;*/
+}
+
+#mymarquee { display: none;}
+
+.scroll{
+	background-color:#e3e3e3;
+	margin: 3px 3px;
+    border: 1px solid #c7c5c5;
+    border-radius: 2px;
+    display: flex;
+	cursor:pointer;
+}
+.scroll img
+{
+	width:26px;
+	opacity:0.5;
+	align-self:center;
+}
+
+.nav-scroller-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 0 0;
+  height: 100px;
+}
+
+
+  .nav-scroller {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    font-size: 0;
+
+    /* Hide scrollbar*/
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+  }
+
+
+    .nav-scroller-content {
+      position: relative;
+      display: flex;
+      /* justify-content: space-around; */
+      float: left;
+      width: min-content;
+      min-width: 100%;
+      transition: transform .4s ease-in-out;
+    }
+
+    .no-transition {
+      transition: none;
+    }
+
+
+      .nav-scroller-item {
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: .5rem;
+      }
+	  
+  .nav-scroller-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 1.25rem;
+    transition: opacity .3s;
+
+    &:not(.active) {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  .nav-scroller-btn--left {
+    left: 0;
+	    height: 80px;
+		cursor:pointer;
+  }
+
+  .nav-scroller-btn--right {
+    right: 0;
+	    height: 80px;
+		cursor:pointer;
+  }
+
+.md_buttonname
+{
+	/* overflow: hidden; */
+    /* height: inherit; */
+    /* margin: 9px 0px; */
+    /* text-wrap: pretty; */
+}
+
+.btnleft, .btnright {
+    display: flex; /* Use flexbox to align the images inside the buttons */
+    align-items: center; /* Center the images vertically */
+    justify-content: center; /* Center the images horizontally */
+    cursor: pointer; /* Change the cursor on hover */
+	 padding: 5px 0px;
+    background-color:white;
+	 margin: 0px 6px 3px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.btnScroll
+{
+	 display: flex;
+    justify-content: space-between; /* Space out the buttons */
+   flex-direction: column;
+    height: 100%; /* Ensure the container has a defined height */
+}
+.btnleft img, .btnright img {
+    width: 24px;
+	opacity:0.4;
+}
+.hideDisplay {display:none!important;}
