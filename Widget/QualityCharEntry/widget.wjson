@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "height": 100,
+    "width": 100,
+    "events": {
+        "50": {
+            "name": "onInitialize"
+        },
+        "60": {
+            "name": "onDataChange"
+        }
+    },
+    "properties": {
+        "10": {
+            "name": "widgetTitle"
+        },
+        "20": {
+            "name": "data"
+        }
+    }
+}

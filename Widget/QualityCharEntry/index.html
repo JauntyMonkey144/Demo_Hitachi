@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../resources/libs/js/jquery.min.js"></script>
+    <script src="../resources/libs/js/kendo.all.min.js"></script>
+    
+    <script src="../Resources/Apis/cwidget_support.js"></script>
+    <script src="../Resources/Apis/Proxy.js" cwidget="QualityCharEntry"></script>
+    
+    <script src="./QualityCharEntry_conf.js"></script>
+    
+    <style>
+        body { 
+            margin: 0; 
+            font-family: Roboto, "Segoe UI", sans-serif; 
+            background: transparent; 
+        }
+        .qce-wrap { 
+            background: #fff; 
+            padding: 15px; 
+            border-radius: 6px; 
+            border: 1px solid #e2e8f0; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .qce-header { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 15px; 
+            border-bottom: 1px solid #e2e8f0; 
+            padding-bottom: 10px; 
+        }
+        .qce-title { 
+            font-size: 18px; 
+            font-weight: bold; 
+            color: #0f172a;
+        }
+        .qce-sub { 
+            font-size: 13px; 
+            color: #64748b; 
+            margin-top: 4px;
+        }
+        
+        /* Chỉnh lại class cho khớp với div-btn-add và div-btn-save */
+        .div-btn-add, .div-btn-save { 
+            display: inline-block; 
+            cursor: pointer; 
+            user-select: none; 
+            text-align: center; 
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .div-btn-add { 
+            border: 1px solid #4f46e5; 
+            color: #4f46e5; 
+            background: #fff; 
+            padding: 6px 12px; 
+            border-radius: 4px; 
+            font-weight: 500; 
+        }
+        .div-btn-add:hover {
+            background: #f8fafc;
+        }
+        .div-btn-save { 
+            background: #4f46e5; 
+            color: #fff; 
+            border: none; 
+            padding: 6px 16px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+        }
+        .div-btn-save:hover {
+            background: #4338ca;
+        }
+        
+        .qce-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            text-align: center; 
+            min-width: 600px; /* Đảm bảo bảng không bị co dúm */
+        }
+        .qce-table th, .qce-table td { 
+            border: 1px solid #cbd5e1; 
+            padding: 8px; 
+        }
+        .qce-table th { 
+            background: #f8fafc; 
+            font-size: 13px; 
+            color: #334155;
+        }
+        .qce-table th span { 
+            display: block; 
+            font-size: 11px; 
+            color: #64748b; 
+            font-weight: normal; 
+            margin-top: 2px;
+        }
+        .qce-input, .qce-select { 
+            width: 90%; 
+            padding: 6px; 
+            border: 1px solid #cbd5e1; 
+            border-radius: 4px; 
+            box-sizing: border-box; /* Giúp input không bị tràn khung */
+            font-family: inherit;
+        }
+        .qce-input:focus, .qce-select:focus { 
+            outline: none; 
+            border-color: #4f46e5; 
+            box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+        }
+        .btn-del { 
+            color: #ef4444; 
+            background: none; 
+            border: none; 
+            font-weight: bold; 
+            cursor: pointer; 
+            padding: 4px 8px;
+            font-size: 14px;
+        }
+        .btn-del:hover {
+            background: #fef2f2;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="myQualityCharEntry">
+        <div class="qce-wrap">
+            <div class="qce-header">
+                <div>
+                    <div class="qce-title">Quality Sample</div>
+                    <div class="qce-sub" id="qce-subtitle">Sample ID: --- | Item: ---</div>
+                </div>
+                <div style="display:flex; gap:10px; align-items: center;">
+                    <div class="div-btn-add" onclick="window.QCE.addRow(event)">+ Add Sample Row</div>
+                    <div class="div-btn-save" onclick="window.QCE.saveData(event)">Save Results</div>
+                </div>
+            </div>
+            <div style="overflow-x: auto;">
+                <table class="qce-table">
+                    <thead id="qce-thead"></thead>
+                    <tbody id="qce-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./main-QualityCharEntry.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+FormWidget_Name_QUALITYCHARENTRY:Quality Char Entry
+FormWidget_QUALITYCHARENTRY_ConfName_QUALITYCHARENTRY:Quality Char Entry Conf
+FormWidget_QUALITYCHARENTRY_Property_WIDGETTITLE:Widget Title
+FormWidget_QUALITYCHARENTRY_Property_DATA:Data
+FormWidget_QUALITYCHARENTRY_Script_ONINITIALIZE:On Initialize
+FormWidget_QUALITYCHARENTRY_Script_ONDATACHANGE:On Data Change

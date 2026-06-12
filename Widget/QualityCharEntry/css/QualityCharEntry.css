@@ -1,0 +1,86 @@
+body { 
+    margin: 0; 
+    font-family: Roboto, sans-serif; 
+    background: transparent; 
+}
+.qce-wrap { 
+    background: #fff; 
+    padding: 15px; 
+    border-radius: 6px; 
+    border: 1px solid #e2e8f0; 
+}
+.qce-header { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 15px; 
+    border-bottom: 1px solid #e2e8f0; 
+    padding-bottom: 10px; 
+}
+.qce-title { 
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #0f172a; 
+}
+.qce-sub { 
+    font-size: 13px; 
+    color: #64748b; 
+    margin-top: 4px; 
+}
+
+/* DÙNG THẺ DIV GIẢ LÀM NÚT BẤM */
+.div-btn-add, .div-btn-save, .div-btn-del { 
+    display: inline-block; 
+    cursor: pointer; 
+    user-select: none; 
+    text-align: center; 
+}
+.div-btn-add { 
+    border: 1px solid #4f46e5; 
+    color: #4f46e5; 
+    padding: 6px 12px; 
+    border-radius: 4px; 
+    font-weight: 500; 
+}
+.div-btn-save { 
+    background: #4f46e5; 
+    color: #fff; 
+    padding: 6px 16px; 
+    border-radius: 4px; 
+    font-weight: bold; 
+}
+.div-btn-del { 
+    color: #ef4444; 
+    font-weight: bold; 
+    padding: 4px 8px; 
+}
+
+.qce-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    text-align: center; 
+}
+.qce-table th, .qce-table td { 
+    border: 1px solid #cbd5e1; 
+    padding: 8px; 
+}
+.qce-table th { 
+    background: #f8fafc; 
+    font-size: 13px; 
+    color: #334155; 
+}
+.qce-table th span { 
+    display: block; 
+    font-size: 11px; 
+    color: #94a3b8; 
+    font-weight: normal; 
+}
+.qce-input, .qce-select { 
+    width: 90%; 
+    padding: 6px; 
+    border: 1px solid #cbd5e1; 
+    border-radius: 4px; 
+}
+.qce-input:focus, .qce-select:focus { 
+    outline: none; 
+    border-color: #4f46e5; 
+}
